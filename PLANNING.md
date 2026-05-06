@@ -1,8 +1,8 @@
 # 📝 Project Planning Worksheet
 
-**Name:** ___________________________  
-**Date:** ___________________________  
-**Project Title:** ___________________________
+**Name:** Zachuary Birdsong  
+**Date:** 5/6/2026  
+**Project Title:** Final Grade Calculator
 
 ---
 
@@ -10,7 +10,7 @@
 
 *Write 2–3 sentences describing your project. What happens when the user runs it? What will they see or do?*
 
-> 
+> This will be a final grade calculator taking all the classes that you input and there grade and averaging them together. THis will give you a final grade and maybe even a possible final GPA. All they have to do is input in there class and grades.
 
 ---
 
@@ -18,9 +18,9 @@
 
 *List every `input()` question you plan to use.*
 
-1. 
-2. 
-3. 
+1. What is your first class? 
+2. What is your grade in {class1}?
+3. Repeat these questions until they answer with no more classes.
 
 ---
 
@@ -30,10 +30,10 @@
 
 | Variable Name | What It Stores | Data Type |
 |---------------|---------------|-----------|
-| | | |
-| | | |
-| | | |
-| | | |
+| class1 | First class | string |
+| grade1 | grade for class 1 | integer |
+| class 2-n | The other different classes | strings |
+| grade 2-n | grades for the classes 2-n | integers |
 
 ---
 
@@ -47,7 +47,7 @@
 
 *(Add more rows if needed.)*
 
----
+--- 
 
 ## Step 5 — What will the output look like?
 
