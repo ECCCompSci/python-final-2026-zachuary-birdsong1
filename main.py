@@ -1,8 +1,8 @@
 # ============================================================
 # Python Final Project 2026
-# Name: 
-# Date: 
-# Project Title: 
+# Name: Zachuary Birdsong
+# Date: 5/6/2026
+# Project Title: Final Calculator
 # Description: (Write 1-2 sentences explaining what your program does)
 # ============================================================
 
@@ -17,7 +17,7 @@
 # Greet the user and explain what your program does.
 
 print("Welcome!")
-print("----------------------------")
+print("This program will calculate your final grade for a single class or all your classes.")
 
 
 
@@ -25,10 +25,9 @@ print("----------------------------")
 # Use input() to ask the user for information.
 # Remember: input() always returns a string.
 # Use int() or float() if you need a number.
+x = input("Do you want to calculate a single class grade or your GPA? Please input either (single class) or (GPA).)
 
-# Example:
-# player_name = input("What is your name? ")
-# score = int(input("Enter a number: "))
+
 
 
 
