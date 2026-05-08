@@ -80,4 +80,6 @@ What class are your trying to calculate your final grade for?
 User types: math
 Enter grades sperated by spaces:
 User types: 80 90 99 97 100 78
+Your final grade bob is a 90.66666666666667 %, or a GPA of 3.626666666666667
+Thanks for using my program!
 ```
