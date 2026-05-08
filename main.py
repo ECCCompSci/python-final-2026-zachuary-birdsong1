@@ -20,12 +20,14 @@ if option == "1":
     grades = [int(x) for x in userInput.split()]
     average = sum(grades) / len(grades)
     print("Your grade for class", class1, "is a", float(average), "%!")
+    # This bit is just to calculate for a single class percentage, or a grade without the GPA part.
 elif option == "2":
     userInput2 = input("Enter the grade you have for each class, seperated by spaces: ")
     grades2 = [int(x) for x in userInput2.split()]
     average2 = sum(grades2) / len(grades2)
     gpa = (average2 / 100) * 4
     print("Your final grade", playerName, "is a", float(average2), "%, or a GPA of", float(gpa))
+    # This part of the code just calculates everything, including the GPA.
 else:
     raise ValueError("Invalid statement, please input one of the following: 1 or 2.")
 
