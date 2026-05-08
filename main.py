@@ -1,52 +1,35 @@
 # ============================================================
 # Python Final Project 2026
-# Name: 
-# Date: 
-# Project Title: 
-# Description: (Write 1-2 sentences explaining what your program does)
+# Name: Zachuary Birdsong
+# Date: 5/6/2026
+# Project Title: Final Calculator
+# Description: (Write 1-2 sentences explaining what your program does)This program will be able to calculate your final grade based on your list of grades given for a single class or give you a final gpa for your grades from your classes.
 # ============================================================
 
+playerName = input("What is your name?")
 
-# ---- SECTION 1: Setup / Variables ----
-# Create your starting variables here.
-# Example: player_name = ""
-
-
-
-# ---- SECTION 2: Welcome Message ----
-# Greet the user and explain what your program does.
-
-print("Welcome!")
-print("----------------------------")
+print("Welcome", playerName)
+print("This program will calculate your final grade for a single class or all your classes.")
 
 
-
-# ---- SECTION 3: Get Input from User ----
-# Use input() to ask the user for information.
-# Remember: input() always returns a string.
-# Use int() or float() if you need a number.
-
-# Example:
-# player_name = input("What is your name? ")
-# score = int(input("Enter a number: "))
-
-
-
-# ---- SECTION 4: Logic (if / elif / else) ----
-# Use if/elif/else to make decisions based on user input or variables.
-
-# Example:
-# if score >= 90:
-#     print("Great job!")
-# elif score >= 70:
-#     print("Good work!")
-# else:
-#     print("Keep practicing!")
+option = input("Do you want to calculate a single class grade or your GPA? Please input either 1 for SINGLE CLASS or 2 for GPA: ")
+# This option will end up deciding how they want to calculate there classes.
+if option == "1": 
+    class1 = input("What class are your trying to calculate your final grade for?")
+    userInput = input("Enter grades sperated by spaces: ")
+    grades = [int(x) for x in userInput.split()]
+    average = sum(grades) / len(grades)
+    print("Your grade for class", class1, "is a", float(average), "%!")
+    # This bit is just to calculate for a single class percentage, or a grade without the GPA part.
+elif option == "2":
+    userInput2 = input("Enter the grade you have for each class, seperated by spaces: ")
+    grades2 = [int(x) for x in userInput2.split()]
+    average2 = sum(grades2) / len(grades2)
+    gpa = (average2 / 100) * 4
+    print("Your final grade", playerName, "is a", float(average2), "%, or a GPA of", float(gpa))
+    # This part of the code just calculates everything, including the GPA.
+else:
+    raise ValueError("Invalid statement, please input one of the following: 1 or 2.")
 
 
-
-# ---- SECTION 5: Final Output ----
-# Print a final message, result, or summary to the user.
-
-print("----------------------------")
 print("Thanks for using my program!")
